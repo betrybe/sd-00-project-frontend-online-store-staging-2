@@ -1,12 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Cart from './pages/Cart';
 
 function App() {
   return (
-    <div className="App">
-      Frontend online store
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={ Home } />
+        <Route path="/carrinho" component={ Cart } />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
