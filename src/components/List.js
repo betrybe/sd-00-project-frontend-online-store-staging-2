@@ -5,7 +5,9 @@ class List extends Component {
     const { items, dataTestId } = this.props;
     return (
       <ul>
-        { items.map((item) => <li data-testid={ dataTestId } key={ item }>{ item.name }</li>) }
+        { items.map((item) => (
+          <li data-testid={ dataTestId } key={ item }>{ item.name }</li>
+        )) }
       </ul>
     );
   }
