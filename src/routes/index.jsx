@@ -6,7 +6,6 @@ import ShoppingCart from '../pages/ShoppingCart';
 import ProductDetail from '../pages/ProductDetail';
 import StoreCheckout from '../pages/StoreCheckout';
 
-
 function Routes() {
   return (
     <Switch>
